@@ -1,9 +1,20 @@
 <!DOCTYPE html>
 <html>
 <body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 <script>
-var a = 5;
+var a = 10;
+
+var y_size = $(window).height();
+var x_size = $(window).width();
+
+console.log(x_size)
 </script>
+
+
+
 
 
 <h2>My First JavaScript</h2>
@@ -12,12 +23,17 @@ var a = 5;
 onclick="document.getElementById('demo').innerHTML = a">
 Click to draw</button>
 
+<button type="button" id="square"
+onclick="document.getElementById('demo').innerHTML = a">
+Click to draw square</button>
+
 <p id="demo" ></p>
 
 
-<canvas id="myCanvas" width="200" height="100"></canvas>
+<canvas id="myCanvas" width=x_size height=y_size> </canvas>
 
 <script src="scripts/format.js"></script>
+
 
 </body>
 </html> 
